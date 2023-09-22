@@ -118,7 +118,6 @@ void loop()
   if (t > 0 && t <= 10)
   {
     digitalWrite(LedGreen, HIGH);
-    digitalWrite(RelePin, HIGH);
 
   }
 
