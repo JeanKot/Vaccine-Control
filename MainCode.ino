@@ -118,6 +118,8 @@ void loop()
   if (t > 0 && t <= 10)
   {
     digitalWrite(LedGreen, HIGH);
+    digitalWrite(RelePin, HIGH);
+
   }
 
   //Ativa o led amarelo e o rele alternadamente em um intervalo de 5 segundos quando temperatura estiver entre 10 e 20
