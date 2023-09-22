@@ -137,6 +137,7 @@ void loop()
     digitalWrite(RelePin, HIGH);
   }
 
+  //caso a temperatura não esteja dentre essas, desligar leds e rele
   else
   {
     digitalWrite(LedGreen, LOW);
