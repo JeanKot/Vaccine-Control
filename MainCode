@@ -70,17 +70,19 @@ void setup()
   Serial.println("Aguardando dados...");
   //Iniclaiza o sensor DHT
   dht.begin();
+
+  //Settup inicial da lcd
+  lcd.setBacklight(HIGH);
+  lcd.setCursor(0,0);
+  lcd.print("VACCINE CONTROL");
+  lcd.setCursor(0,1);
+  lcd.print("EUREKA CASCAVEL");
+  lcd.setCursor(0,0);
+  delay(3000);
 }
 
 void loop() 
 {
-  lcd.setBacklight(HIGH);
-  lcd.setCursor(0,0);
-  lcd.print("Arduino e Cia !!");
-  lcd.setCursor(0,1);
-  lcd.print("LCD e modulo I2C");
-  delay(1000);
-  
   //Aguarda 2 segundos entre as medicoes
   delay(2000);
   
