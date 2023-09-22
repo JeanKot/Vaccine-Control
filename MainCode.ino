@@ -131,7 +131,7 @@ void loop()
   }
 
   //Ativa o led vermelho e o rele quando temperatura estiver entre 20 e 30
-  if (t > 20 && t <= 30)
+  if (t > 20 && t < 30)
   {
     digitalWrite(LedRed, HIGH);
     digitalWrite(RelePin, HIGH);
